@@ -17,7 +17,7 @@ namespace QuanLyBanHang
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HangHoaForm());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyBanHang.Object;
+using QuanLyBanHang.Control;
+using QuanLyBanHang.View;
 
 namespace QuanLyBanHang
 {
@@ -15,6 +18,41 @@ namespace QuanLyBanHang
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void hóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HoaDonForm hd = new HoaDonForm();
+            hd.ShowDialog();
+            
+        }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            KhachHangForm kh = new KhachHangForm();
+            kh.ShowDialog();
+        }
+
+        private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NhanVienForm nv = new NhanVienForm();
+            nv.ShowDialog();
+        }
+
+        private void trợGiúpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TroGiup tg = new TroGiup();
+            tg.ShowDialog();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
