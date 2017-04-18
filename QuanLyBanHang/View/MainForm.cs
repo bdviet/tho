@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using QuanLyBanHang.Object;
 using QuanLyBanHang.Control;
 using QuanLyBanHang.View;
+using QuanLyBanHang.Report;
 
 namespace QuanLyBanHang
 {
@@ -53,6 +54,17 @@ namespace QuanLyBanHang
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void hàngHóaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            HangHoaForm hh = new HangHoaForm();
+            hh.Show();
+        }
+
+        private void hóaĐơnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
